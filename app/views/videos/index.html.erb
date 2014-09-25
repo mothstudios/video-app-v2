@@ -1,0 +1,33 @@
+<h1>List of All Videos</h1>
+
+
+
+<% @videos.each do |video| %>
+<ul><%= link_to video.title, video %></ul>
+<%= video.link.html_safe %>
+<% end %>
+<hr></hr>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <table>
+  <tr>
+    <th>Title of Video</th>
+    <th>Link</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+</thead>
+
+  <tbody>
+
+ -->
